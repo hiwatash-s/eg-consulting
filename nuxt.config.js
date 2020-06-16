@@ -9,7 +9,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'あなただけにオススメの美少女ゲーム(エロゲ)を手配します' },
+      { hid: 'description', name: 'description', content: 'あなただけにオススメの美少女ゲーム(エロゲ)を診断・手配します。あなたの趣味嗜好から診断させて頂きます。過去の名作から最新作まで幅広くオススメエロゲを紹介します。' },
       { name: 'keyword', content: 'エロゲー,エロゲ,オススメ,診断' },  
       { name: 'google-site-verification', content: 'gkQ_XG1S0wMupO325Qzh3A8UMESl4xaeh6ElJF1QLkw' },  
     ],
