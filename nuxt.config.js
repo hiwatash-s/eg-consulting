@@ -64,7 +64,18 @@ export default {
     }
   },
   generate: {
-    fallback: true
+    fallback: true,
+    routes: [
+      '/question',
+      '/answer/naki',
+      '/answer/gimmick',
+      '/answer/normal',
+      '/answer/abnormal',
+      '/answer/rpg',
+      '/answer/slg',
+      '/answer/moe',
+      '/answer/gyagu',
+    ],
   },
   sitemap: {
     path: '/sitemap.xml',
