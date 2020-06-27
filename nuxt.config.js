@@ -5,11 +5,11 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'EG Consulting',
+    title: '性格診断でおすすめエロゲをコンサルティング',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'あなただけにオススメの美少女ゲーム(エロゲ)を診断・手配します。あなたの趣味嗜好から診断させて頂きます。往年の名作から最新作まで幅広くオススメエロゲを紹介します。' },
+      { hid: 'description', name: 'description', content: 'あなただけにオススメのエロゲ(美少女ゲーム)を診断・手配します。あなたの趣味嗜好から診断させて頂きます。往年の名作から最新作まで幅広くオススメエロゲを紹介します。' },
       { name: 'google-site-verification', content: 'gkQ_XG1S0wMupO325Qzh3A8UMESl4xaeh6ElJF1QLkw' },  
     ],
     link: [
