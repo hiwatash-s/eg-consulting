@@ -1,7 +1,7 @@
 <template>
   <div>
     <header class="page-header">
-        <router-link to="/"><h1>EG Consulting</h1></router-link>
+        <router-link to="/"><h1>EG Consulting -性格診断でエロゲをおすすめ-</h1></router-link>
     </header>
 
     <nuxt />
