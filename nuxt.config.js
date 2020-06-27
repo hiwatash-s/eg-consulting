@@ -9,15 +9,14 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'あなただけにオススメの美少女ゲーム(エロゲ)を手配します' },
-      { name: 'keyword', content: 'エロゲー,エロゲ,オススメ,診断' },  
+      { hid: 'description', name: 'description', content: 'あなただけにオススメの美少女ゲーム(エロゲ)を診断・手配します。あなたの趣味嗜好から診断させて頂きます。往年の名作から最新作まで幅広くオススメエロゲを紹介します。' },
       { name: 'google-site-verification', content: 'gkQ_XG1S0wMupO325Qzh3A8UMESl4xaeh6ElJF1QLkw' },  
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://unpkg.com/ress/dist/ress.min.css'},
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Philosopher'},
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&family=Sawarabi+Mincho&display=swap'}
+      { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'},
     ]
   },
   /*
@@ -46,6 +45,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/dotenv',
+    '@nuxtjs/sitemap',
   ],
   /*
   ** Axios module configuration
@@ -65,5 +65,22 @@ export default {
   },
   generate: {
     fallback: true
+  },
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'https://www.eg-consulting.info',
+    gzip: true,
+    exclude: [],
+    routes: [
+      '/question',
+      '/answer/naki',
+      '/answer/gimmick',
+      '/answer/normal',
+      '/answer/abnormal',
+      '/answer/rpg',
+      '/answer/slg',
+      '/answer/moe',
+      '/answer/gyagu',
+    ]
   }
 }

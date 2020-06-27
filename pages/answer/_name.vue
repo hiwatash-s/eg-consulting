@@ -37,10 +37,9 @@
                 </div><!-- ./grid -->
 
 
-                <div class="share">
-                    <p>診断結果をシェア</p>
-                    <a :href="tweet_url"><img class="sns_icon" src="/twitter.png" alt=""></a>
-                </div>
+            <div class="twitter-button-container">
+                <a :href="tweet_url" class="twitter-button"><span class="fa fa-twitter"></span>診断結果をシェア</a>
+            </div>
 
                 <div class="Advertisement">
                     <ins class="widget-banner"></ins><script class="widget-banner-script" src="https://widget-view.dmm.com/js/banner_placement.js?affiliate_id=justy123-001&banner_id=56_728_90"></script>
@@ -126,6 +125,22 @@ export default {
 .page-footer a {
     font-size: 0.5rem;
     color: white;
+}
+
+.twitter-button-container {
+    text-align: center;
+    margin: 100px 0 20px;
+}
+
+.twitter-button {
+    background-color: #55acee;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 90px;
+}
+
+.fa {
+    margin-right: 10px;
 }
 
 /* スマホ対応 */
