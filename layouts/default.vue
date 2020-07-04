@@ -1,7 +1,7 @@
 <template>
   <div>
     <header class="page-header">
-        <router-link to="/"><h1>EG Consulting -性格診断でエロゲをおすすめ-</h1></router-link>
+        <h1><router-link to="/">EG Consulting 性格診断でエロゲをおすすめ</router-link></h1>
     </header>
 
     <nuxt />
@@ -32,11 +32,12 @@ img {
 /* HEADER ------- */
 .page-header {
     text-align: left;
-    padding-left: 60px;
+    padding: 8px 0 14px 60px;
+    line-height: 0;
     background-color: black;
 }
 .page-header a {
-    font-size: 0.5rem;
+    font-size: 1rem;
     color: #fff;
 }
 
@@ -55,5 +56,13 @@ img {
     font-weight: normal;
 }
 
+/* スマホ対応 */
+@media screen and (max-width:480px) {
+.page-header {
+    text-align: center;
+    padding-left: 0px;
+    background-color: black;
+}
+}
 
 </style>

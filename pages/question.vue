@@ -24,7 +24,7 @@
         <div class="question-content wrapper" v-if="question"> 
             <div class="question-container">
             <p class="question-title">質問群 {{ question_alphabet }}</p>
-            <p>
+            <p style="font-weight: bold">
                 {{ question.description }}
             </p>
                 <ul class="selectradio selectradio-inline">

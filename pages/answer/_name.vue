@@ -27,8 +27,8 @@
                     </div>
                 </div><!-- ./grid -->
 
-                <h2>見識を広げるために</h2>
-                <p>以下のゲームもオススメします</p>
+                <h2>Out of box</h2>
+                <p>見識を広げるために以下のゲームもオススメします</p>
                 <div class="grid">
                     <div class="item" v-for="out in answer.out_list" :key="out.name">
                         <a :href="out.link" target=”_blank”><img class="item_image" :src="out.picture" alt=""></a>
