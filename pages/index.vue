@@ -1,12 +1,11 @@
 <template>
-  <div id="home" class="big-bg">
+    <div id="home" class="big-bg">
         <div class="home-content wrapper">
             <h2 class="page-title">EG Consulting</h2>
             <p>あなただけにオススメの美少女ゲーム(エロゲ)を手配いたします</p>
             <br>
             <br>
             <router-link to='/question' class="button">診断する</router-link>
-
             <div class="description-container">
                 <h2>Why</h2>
                 <p>
@@ -35,14 +34,17 @@
                     是非「Out of box」枠を参考にして、箱の外へ出ることを検討してみてください。
                 </p>
             </div>
+
+
             <!-- <router-link to='/question' class="button">診断する</router-link> -->
         </div><!-- /.home-content -->
-  </div>
+
+    </div>
 </template>
 
 <script>
 export default {
-  
+
 }
 </script>
 
@@ -82,7 +84,7 @@ export default {
 /* サイト説明 */
 .description-container {
     text-align: left;
-    max-width: 700px;
+    max-width: 800px;
     margin: 100px auto 0px;
     padding: 2% 4%;
     /* color: white; */
