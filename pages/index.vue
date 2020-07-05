@@ -94,7 +94,7 @@ export default {
 /* スマホ対応 */
 @media screen and (max-width:480px) {
 #home {
-    background-image: url(/index_mobile.jpg);
+    background-image: url(/mobile.jpg);
     min-height: 200vh;
 }
 

@@ -223,7 +223,7 @@ export default {
     max-width: 700px;
     margin: auto;
     padding: 2% 4%;
-    background-color: #fff;
+    background-color: rgba(255,255,255,0.97); 
     border-radius: 10px;
 }
 
@@ -286,6 +286,10 @@ export default {
 
 /* スマホ対応 */
 @media screen and (max-width:480px) {
+#question {
+    background-image: url(/mobile.jpg);
+    min-height: 100vh;
+}
 .question-title {
     font-size: 1rem;
     font-weight: normal;

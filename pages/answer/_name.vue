@@ -8,7 +8,7 @@
                 <h3>と診断されました</h3>
             </div>
 
-            <div class="wrapper">
+            <div class="answer-container">
                 <p>あなたには以下至極のゲームをオススメします</p>
                 <br>
                 <h2>商用作品</h2>
@@ -35,17 +35,18 @@
                         <p>{{ out.name }}</p>
                     </div>
                 </div><!-- ./grid -->
+            </div>
 
 
             <div class="twitter-button-container">
                 <a :href="tweet_url" class="twitter-button"><span class="fa fa-twitter"></span>診断結果をシェア</a>
             </div>
 
-                <div class="Advertisement">
+            <div class="Advertisement">
                     <ins class="widget-banner"></ins><script class="widget-banner-script" src="https://widget-view.dmm.com/js/banner_placement.js?affiliate_id=justy123-001&banner_id=56_728_90"></script>
-                </div>
             </div>
         </div>
+        
         <footer class="page-footer">
             <router-link to="/"><h1>Topへ</h1></router-link>
         </footer>
@@ -93,6 +94,14 @@ export default {
     padding-bottom: 8%;
 }
 
+.answer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4% 4%;
+    background-color: rgba(255,255,255,0.5); 
+    border-radius: 10px;
+}
+
 .grid {
     display: grid;
     gap: 26px;
@@ -113,7 +122,7 @@ export default {
 }
 
 .Advertisement {
-    margin-top: 6%;
+    margin-top: 4%;
     text-align: center;
 }
 
@@ -129,7 +138,7 @@ export default {
 
 .twitter-button-container {
     text-align: center;
-    margin: 100px 0 20px;
+    margin-top: 6%;
 }
 
 .twitter-button {
@@ -145,6 +154,10 @@ export default {
 
 /* スマホ対応 */
 @media screen and (max-width:480px) {
+#answer {
+    background-image: url(/mobile.jpg);
+    min-height: 150vh;
+}
 .page-title {
     font-size: 1.8rem;
     font-family: 'Philosopher', serif;
@@ -153,11 +166,18 @@ export default {
 }
 .answer-title {
     text-align: center;
-    padding-top: 10%;
+    padding-top: 16%;
     padding-bottom: 16%;
 }
 .answer-title h3 {
     margin: 4% 0 4%;
+}
+.answer-container {
+    max-width: 1000px;
+    margin: 0 1%;
+    padding: 4% 4%;
+    background-color: rgba(255,255,255,0.4); 
+    border-radius: 10px;
 }
 .grid {
     display: grid;
